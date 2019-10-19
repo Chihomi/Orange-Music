@@ -1,5 +1,3 @@
-
-
 <?php
 $siteTitle = 'タイトル';
 require('head.php');
