@@ -25,7 +25,7 @@ $artist = (!empty($_GET['artist'])) ? $_GET['artist'] : '';
 //パラメータに不正な値が入っているかチェック
 if(!preg_match('/^[0-9]+$/',$currentPageNum)){
     debug('指定ページに不正な値が入りました');
-    header("Location:index.php");
+    header("Location:top.php");
 }
 //表示件数
 $listSpan = 9;
