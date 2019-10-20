@@ -8,7 +8,7 @@ require('head.php');
     <!-- ヘッダー　-->
     <header>
             <div class="site-width">
-                <h1><a href="index.php" style="letter-spacing:0.06em;">Orange Music</a></h1>
+                <h1><a href="top.php" style="letter-spacing:0.06em;">Orange Music</a></h1>
             </div>
         </header>
         

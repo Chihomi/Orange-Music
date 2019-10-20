@@ -14,7 +14,7 @@ if(!empty($_SESSION['login_date'])){
         //セッション削除
         session_destroy();
         //ログインページへ
-        header("Location:login.php");
+        header("Location:top.php");
     }else{
         debug('ログイン有効期限内です');
         //最終ログイン日時を現在日時に変更
@@ -23,12 +23,12 @@ if(!empty($_SESSION['login_date'])){
         
         if(basename($_SERVER['PHP_SELF']) === 'login.php'){
             debug('HOMEへ遷移します');
-            header("Location:index.php");
+            header("Location:top.php");
         }
     }
 }else{
     debug('未ログインユーザーです');
     if(basename($_SERVER['PHP_SELF']) !== 'login.php'){
-        header("Location:login.php");
+        header("Location:top.php");
     }
 }
