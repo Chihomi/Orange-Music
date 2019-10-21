@@ -504,6 +504,31 @@ function isLike($u_id,$p_id){
         error_log('エラー発生:' .$e->getMessage());
     }
 }
+
+function getMyFavorite($u_id){
+    debug('自分のお気に入りを確認します');
+    debug('ユーザーID：'.$u_id);
+    
+    try{
+        
+        $dbh = dbConnect();
+        
+        $sql = 'SELECT * FROM favorite AS f LEFT JOIN post AS p ON f.post_id = p.id WHERE f.user_id = :u_id';
+        
+        $data = array(':u_id' => $u_id);
+        
+        $stmt = queryPost($dbh,$sql,$data);
+        
+        if($stmt){
+            return $stmt->fetchAll();
+        }else{
+            return false;
+        }
+        
+    }catch (Exception $e){
+        error_log('エラー発生：' .$e->getMessege());
+    }
+}
 //===================
 //メール送信
 //===================

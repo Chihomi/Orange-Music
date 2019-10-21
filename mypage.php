@@ -1,7 +1,5 @@
 <?php
 
-ini_set('display_errors',1);
-ini_set('error_reporting',E_ALL);
 //共通変数・関数ファイルを読込み
 require('function.php');
 
@@ -25,6 +23,8 @@ $u_id = $_SESSION['user_id'];
 $dbFormData = getUser($u_id);
 
 $postData = getMyPost($u_id);
+
+$favoriteData = getMyFavorite($u_id);
 
 
 if(!empty($_POST)){
@@ -103,7 +103,7 @@ require('head.php');
                                </form></td>
                            </tr>
                            <?php
-                            }                          
+                            }
                         }
                         ?>
                     </tbody>
@@ -112,6 +112,28 @@ require('head.php');
                  
              </section>
              
+             <section class="list list-table">
+                <h2 class="list-title" style="color:#757575;">お気に入り一覧</h2>
+                <table class="table">
+                    <tbody>
+                        <?php
+                        if(!empty($favoriteData)){
+                            foreach($favoriteData as $key => $val){
+                        ?>
+                           <tr>
+                               <td><a href="postDetail.php?p_id=<?php echo sanitize($val['id']); ?>"><?php echo sanitize($val['title']); ?></a>&nbsp;&frasl;&nbsp;<?php echo sanitize($val['artist']); ?></td>
+                               
+                               
+                           </tr>
+                           <?php
+                            }
+                        }
+                        ?>
+                    </tbody>
+                </table>
+                
+                 
+             </section>
          </div>
      </section>
 </body>

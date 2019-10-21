@@ -51,8 +51,8 @@ require('head.php');
                     <div class="link">
                     <a href="<?php echo sanitize($postUser['twitter']); ?>">
                         <i class="fab fa-twitter fa-3x" style="color:#009dfb;"></i></a>
-                    <i class="fab fa-instagram fa-3x" style="color:#f00075;"></i>
-                    <i class="fab fa-facebook fa-3x" style="color:#0869fb;"></i>
+                        <a href="<?php echo sanitize($postUser['instagram']); ?>"><i class="fab fa-instagram fa-3x" style="color:#f00075;"></i></a>
+                        <a href="<?php echo sanitize($postUser['facebook']); ?>"><i class="fab fa-facebook fa-3x" style="color:#0869fb;"></i></a>
                     </div>
                     <div class="avatarprof" style="text-align:center;"><?php echo sanitize($postUser['preference']); ?></div>
                     

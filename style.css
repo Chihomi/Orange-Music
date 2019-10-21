@@ -1031,6 +1031,6 @@ h1.comment{
     text-align: center;
     margin-bottom: 30px;
 }
-.link > .fab{
+.link .fab{
     margin: 0 10px;
 }
