@@ -104,6 +104,10 @@ require('head.php');
                            </tr>
                            <?php
                             }
+                        }else{
+                            ?>
+                            <p>投稿はありません</p>
+                            <?php
                         }
                         ?>
                     </tbody>
@@ -127,6 +131,10 @@ require('head.php');
                            </tr>
                            <?php
                             }
+                        }else{
+                            ?>
+                            <p>お気に入りはありません</p>
+                            <?php
                         }
                         ?>
                     </tbody>
