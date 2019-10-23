@@ -186,7 +186,7 @@ require('head.php');
                     </div>
                     
                     <label class="<?php echo getErrStyle('comment'); ?>">
-                        <textarea name="comment" id="js-count" cols="44" rows="10" placeholder="好きなところやおすすめポイント" style="margin-top:30px;"><?php echo getFormData('comment'); ?></textarea>
+                        <textarea name="comment" id="js-count" cols="36" rows="10" placeholder="好きなところやおすすめポイント" style="margin-top:30px;"><?php echo getFormData('comment'); ?></textarea>
                     </label>
                     <p class="counter-text"><span id="js-count-view">0</span>/250文字</p>
                      <div class="area-msg">

@@ -175,7 +175,7 @@ require('head.php');
             </div>
             <div class="area-send-msg">
                 <form action="" method="post">
-                    <textarea name="msg"  cols="85" rows="3"></textarea>
+                    <textarea name="msg"  cols="60" rows="3"></textarea>
                     <input type="submit" value="送信" class="btn btn-send">
                 </form>
             </div>

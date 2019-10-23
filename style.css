@@ -533,7 +533,8 @@ textarea{
     border: none;
     padding: 13px 17px;
     border-radius: 15px;
-    
+    height: 210px;
+    width: 410px;
 }
 .form4 .area-msg{
     color: #f99292;    
@@ -884,6 +885,8 @@ h1.comment{
     border-top: solid 5px #8cd790;
     font-size: 20px;
     overflow-y: scroll;
+    height: 70px;
+    width: 780px;
 }
 .area-send-msg{
     width: 100%;
