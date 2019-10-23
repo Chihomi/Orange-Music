@@ -29,6 +29,6 @@ if(!empty($_SESSION['login_date'])){
 }else{
     debug('未ログインユーザーです');
     if(basename($_SERVER['PHP_SELF']) !== 'login.php'){
-        header("Location:logins.php");
+        header("Location:login.php");
     }
 }
