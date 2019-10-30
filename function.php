@@ -218,7 +218,7 @@ function dbConnect(){
     //DBへの接続準備
     $dsn = 'mysql:dbname=sakuraq_orangemusic;host=mysql8076.xserver.jp;charset=utf8';
     $user = 'sakuraq_aaa';
-    $password = '';
+    $password = 'sakuraqaaa';
     $options = array(
         // SQL実行失敗時にはエラーコードのみ設定
     PDO::ATTR_ERRMODE => PDO::ERRMODE_SILENT,
